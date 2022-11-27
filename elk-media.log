@@ -1,0 +1,265 @@
+2022-11-25 11:24:56.905  INFO [media-service,,] 36596 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9196
+2022-11-25 11:24:58.018  INFO [media-service,,] 36596 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=media-service, profiles=[default], label=null, version=8380213131ea47d2fedf490c3e30b7b6152be357, state=null
+2022-11-25 11:24:58.019  INFO [media-service,,] 36596 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/RalphWinner/cloud-config-server/file:C:\Users\rd043481\AppData\Local\Temp\config-repo-9884375547030323427\application.yml'}]
+2022-11-25 11:24:58.055  INFO [media-service,,] 36596 --- [main] com.ralph.MediaApplication               : No active profile set, falling back to default profiles: default
+2022-11-25 11:24:59.377  INFO [media-service,,] 36596 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-25 11:24:59.605  INFO [media-service,,] 36596 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 218 ms. Found 3 JPA repository interfaces.
+2022-11-25 11:25:00.030  INFO [media-service,,] 36596 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=39897cc6-5dd5-3807-b29b-e3f0d37fce05
+2022-11-25 11:25:01.123  INFO [media-service,,] 36596 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-25 11:25:01.139  INFO [media-service,,] 36596 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-25 11:25:01.140  INFO [media-service,,] 36596 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-11-25 11:25:01.335  INFO [media-service,,] 36596 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-25 11:25:01.336  INFO [media-service,,] 36596 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3246 ms
+2022-11-25 11:25:01.994  WARN [media-service,,] 36596 --- [main] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://127.0.0.1:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request: "Empty JSON_V2 message"}]
+2022-11-25 11:25:02.245  INFO [media-service,,] 36596 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-25 11:25:02.343  INFO [media-service,,] 36596 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-11-25 11:25:02.555  INFO [media-service,,] 36596 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-25 11:25:02.695  INFO [media-service,,] 36596 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-25 11:25:03.006  INFO [media-service,,] 36596 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-25 11:25:03.138  INFO [media-service,,] 36596 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-11-25 11:25:04.842  INFO [media-service,,] 36596 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-25 11:25:04.855  INFO [media-service,,] 36596 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-25 11:25:05.301  WARN [media-service,,] 36596 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-25 11:25:05.589  INFO [media-service,,] 36596 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-11-25 11:25:08.416  INFO [media-service,,] 36596 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-11-25 11:25:09.216  WARN [media-service,,] 36596 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-11-25 11:25:09.428  INFO [media-service,,] 36596 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-11-25 11:25:09.477  INFO [media-service,,] 36596 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-11-25 11:25:09.484  INFO [media-service,,] 36596 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-25 11:25:09.520  INFO [media-service,,] 36596 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-11-25 11:25:09.521  INFO [media-service,,] 36596 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-11-25 11:25:09.521  INFO [media-service,,] 36596 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-11-25 11:25:09.521  INFO [media-service,,] 36596 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-11-25 11:25:09.521  INFO [media-service,,] 36596 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-11-25 11:25:09.521  INFO [media-service,,] 36596 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-11-25 11:25:09.521  INFO [media-service,,] 36596 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-11-25 11:25:10.286  INFO [media-service,,] 36596 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-11-25 11:25:10.307  INFO [media-service,,] 36596 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-11-25 11:25:10.310  INFO [media-service,,] 36596 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-11-25 11:25:10.337  INFO [media-service,,] 36596 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1669397110314 with initial instances count: 4
+2022-11-25 11:25:10.344  INFO [media-service,,] 36596 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MEDIA-SERVICE with eureka with status UP
+2022-11-25 11:25:10.344  INFO [media-service,,] 36596 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1669397110344, current=UP, previous=STARTING]
+2022-11-25 11:25:10.346  INFO [media-service,,] 36596 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MEDIA-SERVICE/HT-RD043481-01.digicelgroup.local:media-service:8080: registering service...
+2022-11-25 11:25:10.419  INFO [media-service,,] 36596 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MEDIA-SERVICE/HT-RD043481-01.digicelgroup.local:media-service:8080 - registration status: 204
+2022-11-25 11:25:10.700  INFO [media-service,,] 36596 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-25 11:25:10.701  INFO [media-service,,] 36596 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2022-11-25 11:25:11.035  INFO [media-service,,] 36596 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-11-25 11:25:11.063  INFO [media-service,,] 36596 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-11-25 11:25:11.120  INFO [media-service,,] 36596 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-11-25 11:25:11.333  INFO [media-service,,] 36596 --- [main] com.ralph.MediaApplication               : Started MediaApplication in 17.614 seconds (JVM running for 19.942)
+2022-11-25 11:26:00.026  INFO [media-service,,] 36596 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-25 11:26:00.033  INFO [media-service,,] 36596 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-25 11:26:00.037  INFO [media-service,,] 36596 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-11-25 11:30:09.530  INFO [media-service,,] 36596 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-25 11:31:52.574  INFO [media-service,,] 25472 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9196
+2022-11-25 11:31:53.225  INFO [media-service,,] 25472 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=media-service, profiles=[default], label=null, version=8380213131ea47d2fedf490c3e30b7b6152be357, state=null
+2022-11-25 11:31:53.226  INFO [media-service,,] 25472 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/RalphWinner/cloud-config-server/file:C:\Users\rd043481\AppData\Local\Temp\config-repo-9884375547030323427\application.yml'}]
+2022-11-25 11:31:53.240  INFO [media-service,,] 25472 --- [main] com.ralph.MediaApplication               : No active profile set, falling back to default profiles: default
+2022-11-25 11:31:54.295  INFO [media-service,,] 25472 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-25 11:31:54.507  INFO [media-service,,] 25472 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 200 ms. Found 3 JPA repository interfaces.
+2022-11-25 11:31:54.904  INFO [media-service,,] 25472 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=39897cc6-5dd5-3807-b29b-e3f0d37fce05
+2022-11-25 11:31:56.046  INFO [media-service,,] 25472 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-25 11:31:56.060  INFO [media-service,,] 25472 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-25 11:31:56.061  INFO [media-service,,] 25472 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-11-25 11:31:56.227  INFO [media-service,,] 25472 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-25 11:31:56.228  INFO [media-service,,] 25472 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2970 ms
+2022-11-25 11:31:56.686  WARN [media-service,,] 25472 --- [main] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://127.0.0.1:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request: "Empty JSON_V2 message"}]
+2022-11-25 11:31:57.047  INFO [media-service,,] 25472 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-25 11:31:57.156  INFO [media-service,,] 25472 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-11-25 11:31:57.436  INFO [media-service,,] 25472 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-25 11:31:57.593  INFO [media-service,,] 25472 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-25 11:31:57.934  INFO [media-service,,] 25472 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-25 11:31:57.960  INFO [media-service,,] 25472 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-11-25 11:31:59.130  INFO [media-service,,] 25472 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-25 11:31:59.148  INFO [media-service,,] 25472 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-25 11:31:59.583  WARN [media-service,,] 25472 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-25 11:31:59.993  INFO [media-service,,] 25472 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-11-25 11:32:02.132  INFO [media-service,,] 25472 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-11-25 11:32:03.062  WARN [media-service,,] 25472 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-11-25 11:32:03.279  INFO [media-service,,] 25472 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-11-25 11:32:03.555  INFO [media-service,,] 25472 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-11-25 11:32:03.581  INFO [media-service,,] 25472 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-25 11:32:03.645  INFO [media-service,,] 25472 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-11-25 11:32:03.645  INFO [media-service,,] 25472 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-11-25 11:32:03.645  INFO [media-service,,] 25472 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-11-25 11:32:03.646  INFO [media-service,,] 25472 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-11-25 11:32:03.646  INFO [media-service,,] 25472 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-11-25 11:32:03.646  INFO [media-service,,] 25472 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-11-25 11:32:03.646  INFO [media-service,,] 25472 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-11-25 11:32:03.885  INFO [media-service,,] 25472 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-11-25 11:32:03.888  INFO [media-service,,] 25472 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-11-25 11:32:03.891  INFO [media-service,,] 25472 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-11-25 11:32:03.896  INFO [media-service,,] 25472 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1669397523895 with initial instances count: 4
+2022-11-25 11:32:03.903  INFO [media-service,,] 25472 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MEDIA-SERVICE with eureka with status UP
+2022-11-25 11:32:03.903  INFO [media-service,,] 25472 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1669397523903, current=UP, previous=STARTING]
+2022-11-25 11:32:03.904  INFO [media-service,,] 25472 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MEDIA-SERVICE/HT-RD043481-01.digicelgroup.local:media-service:8080: registering service...
+2022-11-25 11:32:03.910  WARN [media-service,,] 25472 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2022-11-25 11:32:03.921  INFO [media-service,,] 25472 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-25 11:32:03.923  INFO [media-service,,] 25472 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-25 11:32:03.929  INFO [media-service,,] 25472 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-25 11:32:03.973  INFO [media-service,,] 25472 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MEDIA-SERVICE/HT-RD043481-01.digicelgroup.local:media-service:8080 - registration status: 204
+2022-11-25 11:32:04.938  WARN [media-service,,] 25472 --- [main] z.r.AsyncReporter$BoundedAsyncReporter   : Timed out waiting for in-flight spans to send
+2022-11-25 11:32:04.939  INFO [media-service,,] 25472 --- [main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-11-25 11:32:07.950  INFO [media-service,,] 25472 --- [main] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-11-25 11:32:07.959  INFO [media-service,,] 25472 --- [main] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MEDIA-SERVICE/HT-RD043481-01.digicelgroup.local:media-service:8080 - deregister  status: 200
+2022-11-25 11:32:07.963  INFO [media-service,,] 25472 --- [main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-11-25 11:32:07.964  INFO [media-service,,] 25472 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-11-25 11:32:07.979  INFO [media-service,,] 25472 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-11-25 11:32:07.995 ERROR [media-service,,] 25472 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2022-11-25 11:32:10.556  INFO [media-service,,] 36596 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MEDIA-SERVICE/HT-RD043481-01.digicelgroup.local:media-service:8080 - Re-registering apps/MEDIA-SERVICE
+2022-11-25 11:32:10.557  INFO [media-service,,] 36596 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MEDIA-SERVICE/HT-RD043481-01.digicelgroup.local:media-service:8080: registering service...
+2022-11-25 11:32:10.578  INFO [media-service,,] 36596 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MEDIA-SERVICE/HT-RD043481-01.digicelgroup.local:media-service:8080 - registration status: 204
+2022-11-25 11:32:16.968  INFO [media-service,,] 36596 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application MEDIA-SERVICE with eureka with status DOWN
+2022-11-25 11:32:16.969  INFO [media-service,,] 36596 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1669397536969, current=DOWN, previous=UP]
+2022-11-25 11:32:16.969  INFO [media-service,,] 36596 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MEDIA-SERVICE/HT-RD043481-01.digicelgroup.local:media-service:8080: registering service...
+2022-11-25 11:32:16.975  INFO [media-service,,] 36596 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MEDIA-SERVICE/HT-RD043481-01.digicelgroup.local:media-service:8080 - registration status: 204
+2022-11-25 11:32:17.592  INFO [media-service,,] 36596 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-25 11:32:17.598  INFO [media-service,,] 36596 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-25 11:32:17.610  INFO [media-service,,] 36596 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-25 11:32:18.387  INFO [media-service,,] 36596 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-11-25 11:32:21.390  INFO [media-service,,] 36596 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-11-25 11:32:21.396  INFO [media-service,,] 36596 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MEDIA-SERVICE/HT-RD043481-01.digicelgroup.local:media-service:8080 - deregister  status: 200
+2022-11-25 11:32:21.399  INFO [media-service,,] 36596 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-11-25 11:32:31.674  INFO [media-service,,] 39216 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9196
+2022-11-25 11:32:32.115  INFO [media-service,,] 39216 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=media-service, profiles=[default], label=null, version=8380213131ea47d2fedf490c3e30b7b6152be357, state=null
+2022-11-25 11:32:32.116  INFO [media-service,,] 39216 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/RalphWinner/cloud-config-server/file:C:\Users\rd043481\AppData\Local\Temp\config-repo-9884375547030323427\application.yml'}]
+2022-11-25 11:32:32.128  INFO [media-service,,] 39216 --- [main] com.ralph.MediaApplication               : No active profile set, falling back to default profiles: default
+2022-11-25 11:32:32.908  INFO [media-service,,] 39216 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-25 11:32:33.047  INFO [media-service,,] 39216 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 131 ms. Found 3 JPA repository interfaces.
+2022-11-25 11:32:33.388  INFO [media-service,,] 39216 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=39897cc6-5dd5-3807-b29b-e3f0d37fce05
+2022-11-25 11:32:34.138  INFO [media-service,,] 39216 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-25 11:32:34.149  INFO [media-service,,] 39216 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-25 11:32:34.149  INFO [media-service,,] 39216 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-11-25 11:32:34.289  INFO [media-service,,] 39216 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-25 11:32:34.289  INFO [media-service,,] 39216 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2148 ms
+2022-11-25 11:32:34.610  WARN [media-service,,] 39216 --- [main] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://127.0.0.1:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request: "Empty JSON_V2 message"}]
+2022-11-25 11:32:34.871  INFO [media-service,,] 39216 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-25 11:32:34.958  INFO [media-service,,] 39216 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-11-25 11:32:35.191  INFO [media-service,,] 39216 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-25 11:32:35.337  INFO [media-service,,] 39216 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-25 11:32:35.573  INFO [media-service,,] 39216 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-25 11:32:35.616  INFO [media-service,,] 39216 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-11-25 11:32:36.591  INFO [media-service,,] 39216 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-25 11:32:36.601  INFO [media-service,,] 39216 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-25 11:32:36.963  WARN [media-service,,] 39216 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-25 11:32:37.216  INFO [media-service,,] 39216 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-11-25 11:32:38.948  INFO [media-service,,] 39216 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-11-25 11:32:39.572  WARN [media-service,,] 39216 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-11-25 11:32:39.712  INFO [media-service,,] 39216 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-11-25 11:32:39.745  INFO [media-service,,] 39216 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-11-25 11:32:39.749  INFO [media-service,,] 39216 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-25 11:32:39.776  INFO [media-service,,] 39216 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-11-25 11:32:39.776  INFO [media-service,,] 39216 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-11-25 11:32:39.777  INFO [media-service,,] 39216 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-11-25 11:32:39.777  INFO [media-service,,] 39216 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-11-25 11:32:39.777  INFO [media-service,,] 39216 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-11-25 11:32:39.777  INFO [media-service,,] 39216 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-11-25 11:32:39.777  INFO [media-service,,] 39216 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-11-25 11:32:39.942  INFO [media-service,,] 39216 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-11-25 11:32:39.945  INFO [media-service,,] 39216 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-11-25 11:32:39.948  INFO [media-service,,] 39216 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-11-25 11:32:39.954  INFO [media-service,,] 39216 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1669397559952 with initial instances count: 4
+2022-11-25 11:32:39.961  INFO [media-service,,] 39216 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MEDIA-SERVICE with eureka with status UP
+2022-11-25 11:32:39.962  INFO [media-service,,] 39216 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1669397559962, current=UP, previous=STARTING]
+2022-11-25 11:32:39.963  INFO [media-service,,] 39216 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MEDIA-SERVICE/HT-RD043481-01.digicelgroup.local:media-service:8080: registering service...
+2022-11-25 11:32:39.989  INFO [media-service,,] 39216 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-25 11:32:39.990  INFO [media-service,,] 39216 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2022-11-25 11:32:40.002  INFO [media-service,,] 39216 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MEDIA-SERVICE/HT-RD043481-01.digicelgroup.local:media-service:8080 - registration status: 204
+2022-11-25 11:32:40.246  INFO [media-service,,] 39216 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-11-25 11:32:40.264  INFO [media-service,,] 39216 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-11-25 11:32:40.304  INFO [media-service,,] 39216 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-11-25 11:32:40.462  INFO [media-service,,] 39216 --- [main] com.ralph.MediaApplication               : Started MediaApplication in 10.942 seconds (JVM running for 11.924)
+2022-11-25 11:32:40.465  WARN [media-service,,] 39216 --- [main] com.ralph.MediaApplication               : After The app start
+2022-11-25 11:34:54.133  INFO [media-service,,] 39216 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application MEDIA-SERVICE with eureka with status DOWN
+2022-11-25 11:34:54.134  INFO [media-service,,] 39216 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1669397694134, current=DOWN, previous=UP]
+2022-11-25 11:34:54.134  INFO [media-service,,] 39216 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MEDIA-SERVICE/HT-RD043481-01.digicelgroup.local:media-service:8080: registering service...
+2022-11-25 11:34:54.141  INFO [media-service,,] 39216 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MEDIA-SERVICE/HT-RD043481-01.digicelgroup.local:media-service:8080 - registration status: 204
+2022-11-25 11:34:54.180  INFO [media-service,,] 39216 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-25 11:34:54.182  INFO [media-service,,] 39216 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-25 11:34:54.187  INFO [media-service,,] 39216 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-25 11:34:55.203  INFO [media-service,,] 39216 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-11-25 11:34:58.211  INFO [media-service,,] 39216 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-11-25 11:34:58.216  INFO [media-service,,] 39216 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MEDIA-SERVICE/HT-RD043481-01.digicelgroup.local:media-service:8080 - deregister  status: 200
+2022-11-25 11:34:58.219  INFO [media-service,,] 39216 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-11-25 11:35:12.845  INFO [media-service,,] 5596 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9196
+2022-11-25 11:35:13.612  INFO [media-service,,] 5596 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=media-service, profiles=[default], label=null, version=8380213131ea47d2fedf490c3e30b7b6152be357, state=null
+2022-11-25 11:35:13.613  INFO [media-service,,] 5596 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/RalphWinner/cloud-config-server/file:C:\Users\rd043481\AppData\Local\Temp\config-repo-9884375547030323427\application.yml'}]
+2022-11-25 11:35:13.629  INFO [media-service,,] 5596 --- [main] com.ralph.MediaApplication               : No active profile set, falling back to default profiles: default
+2022-11-25 11:35:14.599  INFO [media-service,,] 5596 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-25 11:35:14.794  INFO [media-service,,] 5596 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 184 ms. Found 3 JPA repository interfaces.
+2022-11-25 11:35:15.264  INFO [media-service,,] 5596 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=39897cc6-5dd5-3807-b29b-e3f0d37fce05
+2022-11-25 11:35:16.214  INFO [media-service,,] 5596 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-25 11:35:16.230  INFO [media-service,,] 5596 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-25 11:35:16.231  INFO [media-service,,] 5596 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-11-25 11:35:16.414  INFO [media-service,,] 5596 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-25 11:35:16.415  INFO [media-service,,] 5596 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2768 ms
+2022-11-25 11:35:16.779  WARN [media-service,,] 5596 --- [main] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://127.0.0.1:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request: "Empty JSON_V2 message"}]
+2022-11-25 11:35:17.124  INFO [media-service,,] 5596 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-25 11:35:17.236  INFO [media-service,,] 5596 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-11-25 11:35:17.451  INFO [media-service,,] 5596 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-25 11:35:17.587  INFO [media-service,,] 5596 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-25 11:35:17.849  INFO [media-service,,] 5596 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-25 11:35:17.883  INFO [media-service,,] 5596 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-11-25 11:35:20.983  INFO [media-service,,] 5596 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-25 11:35:20.995  INFO [media-service,,] 5596 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-25 11:35:21.383  WARN [media-service,,] 5596 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-25 11:35:21.651  INFO [media-service,,] 5596 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-11-25 11:35:23.655  INFO [media-service,,] 5596 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-11-25 11:35:24.350  WARN [media-service,,] 5596 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-11-25 11:35:24.498  INFO [media-service,,] 5596 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-11-25 11:35:24.532  INFO [media-service,,] 5596 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-11-25 11:35:24.536  INFO [media-service,,] 5596 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-25 11:35:24.562  INFO [media-service,,] 5596 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-11-25 11:35:24.562  INFO [media-service,,] 5596 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-11-25 11:35:24.562  INFO [media-service,,] 5596 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-11-25 11:35:24.562  INFO [media-service,,] 5596 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-11-25 11:35:24.563  INFO [media-service,,] 5596 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-11-25 11:35:24.563  INFO [media-service,,] 5596 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-11-25 11:35:24.563  INFO [media-service,,] 5596 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-11-25 11:35:24.749  INFO [media-service,,] 5596 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-11-25 11:35:24.753  INFO [media-service,,] 5596 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-11-25 11:35:24.758  INFO [media-service,,] 5596 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-11-25 11:35:24.765  INFO [media-service,,] 5596 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1669397724763 with initial instances count: 3
+2022-11-25 11:35:24.777  INFO [media-service,,] 5596 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MEDIA-SERVICE with eureka with status UP
+2022-11-25 11:35:24.778  INFO [media-service,,] 5596 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1669397724778, current=UP, previous=STARTING]
+2022-11-25 11:35:24.780  INFO [media-service,,] 5596 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MEDIA-SERVICE/HT-RD043481-01.digicelgroup.local:media-service:8080: registering service...
+2022-11-25 11:35:24.817  INFO [media-service,,] 5596 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-25 11:35:24.819  INFO [media-service,,] 5596 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2022-11-25 11:35:24.829  INFO [media-service,,] 5596 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MEDIA-SERVICE/HT-RD043481-01.digicelgroup.local:media-service:8080 - registration status: 204
+2022-11-25 11:35:25.123  INFO [media-service,,] 5596 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-11-25 11:35:25.147  INFO [media-service,,] 5596 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-11-25 11:35:25.192  INFO [media-service,,] 5596 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-11-25 11:35:25.411  INFO [media-service,,] 5596 --- [main] com.ralph.MediaApplication               : Started MediaApplication in 14.741 seconds (JVM running for 15.818)
+2022-11-25 11:35:25.414  INFO [media-service,,] 5596 --- [main] com.ralph.MediaApplication               : After The app start
+2022-11-25 11:36:07.362  INFO [media-service,,] 5596 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-25 11:36:07.363  INFO [media-service,,] 5596 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-25 11:36:07.364  INFO [media-service,,] 5596 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-11-25 11:40:24.575  INFO [media-service,,] 5596 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-25 11:45:24.589  INFO [media-service,,] 5596 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-25 11:50:24.603  INFO [media-service,,] 5596 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-11-25 11:50:43.043  INFO [media-service,,] 5596 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application MEDIA-SERVICE with eureka with status DOWN
+2022-11-25 11:50:43.049  INFO [media-service,,] 5596 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1669398643049, current=DOWN, previous=UP]
+2022-11-25 11:50:43.058  INFO [media-service,,] 5596 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MEDIA-SERVICE/HT-RD043481-01.digicelgroup.local:media-service:8080: registering service...
+2022-11-25 11:50:43.209  INFO [media-service,,] 5596 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MEDIA-SERVICE/HT-RD043481-01.digicelgroup.local:media-service:8080 - registration status: 204
+2022-11-25 11:50:44.156  INFO [media-service,,] 5596 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-25 11:50:44.215  INFO [media-service,,] 5596 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-25 11:50:44.318  INFO [media-service,,] 5596 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-25 11:50:45.568  INFO [media-service,,] 5596 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-11-25 11:50:48.585  INFO [media-service,,] 5596 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-11-25 11:50:48.612  INFO [media-service,,] 5596 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MEDIA-SERVICE/HT-RD043481-01.digicelgroup.local:media-service:8080 - deregister  status: 200
+2022-11-25 11:50:48.631  INFO [media-service,,] 5596 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

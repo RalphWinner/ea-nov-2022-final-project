@@ -1,0 +1,12 @@
+insert into comment (media_id, comment_content, user_id, inserted_date) values (1, 'open system', 1, '11/22/2022');
+insert into comment (media_id, comment_content, user_id, inserted_date) values (2, 'zero defect', 2, '7/27/2022');
+insert into comment (media_id, comment_content, user_id, inserted_date) values (3, 'multi-state', 3, '2/4/2022');
+insert into comment (media_id, comment_content, user_id, inserted_date) values (4, 'support', 4, '6/18/2022');
+insert into comment (media_id, comment_content, user_id, inserted_date) values (5, 'Advanced', 5, '10/1/2022');
+insert into comment (media_id, comment_content, user_id, inserted_date) values (6, 'open architecture', 6, '11/27/2021');
+insert into comment (media_id, comment_content, user_id, inserted_date) values (7, 'tertiary', 7, '9/30/2022');
+insert into comment (media_id, comment_content, user_id, inserted_date) values (8, 'empowering', 8, '10/3/2022');
+insert into comment (media_id, comment_content, user_id, inserted_date) values (9, 'bi-directional', 9, '5/11/2022');
+insert into comment (media_id, comment_content, user_id, inserted_date) values (10, 'orchestration', 10, '10/18/2022');
+insert into comment (media_id, comment_content, user_id, inserted_date) values (11, 'alliance', 11, '3/16/2022');
+insert into comment (media_id, comment_content, user_id, inserted_date) values (12, 'intangible', 12, '4/25/2022');

@@ -1,0 +1,17 @@
+server:
+  port: 8088
+
+#spring:
+#  application:
+#    name: api-gateway
+#    cloud:
+#      gateway:
+#        routes:
+#          - id: COMMENT-SERVICE
+#            uri: lb://COMMENT-SERVICE
+#            predicates:
+#              - Path=/comment/**
+#          - id: MEDIA-SERVICE
+#            uri: lb://MEDIA-SERVICE
+#            predicates:
+#              - Path=/media/**
